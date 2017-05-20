@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --port 3015 --hot --inline --history-api-fallback",
+    "start": "webpack-dev-server --port 3015",
     "build": "webpack"
   },
   "keywords": [],
