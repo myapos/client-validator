@@ -1,25 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import * as actions from '../../actions/';
 import css from './css/css.css';
 import Title from './Presentational/Title';
 import Test from './Presentational/Test';
 import Footer from './Presentational/Footer';
 
-// const App = () =>
-
-//   <div>
-//     <Title />
-//     <Test />
-//     <Footer />
-//   </div>;
-
 class App extends Component {
-  constructor (props) {
-    super(props);
-    // console.log('log:', props);
-    // this.state = {
-    //   ...props,
-    // };
-  }
 
   render () {
     return (
@@ -32,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(state => state, actions)(App);

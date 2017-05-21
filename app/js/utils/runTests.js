@@ -7,7 +7,7 @@ export default async url => {
     const response = await fetch(url);
     const data = await response.json();
     // console.log(data);
-    res.output.push(data);
+    await res.output.push(data);
   } catch (e) {
     console.warn(e);
   }
